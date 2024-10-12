@@ -1,0 +1,1236 @@
+/* Reset some basic styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+}
+ud {
+  text-decoration: underline;
+}
+yellow {
+  color: #fbb517;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* First header (Alert Section) styling */
+.alert-header {
+  background-color: #fbb517;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+
+.alert-header p {
+  color: black;
+  margin: 0;
+}
+
+/* Second header (Main Navigation) styling */
+.main-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 100px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.main-header .logo img {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: color 0.3s ease;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: orange;
+}
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--nav-menu-icon-size, 22px);
+  padding: 0.25em;
+  cursor: pointer;
+  border: 0 solid;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #f2f2f2;
+  margin-left: auto;
+}
+.hamburger svg {
+  height: 23px;
+  width: 23px;
+  color: #494c4f;
+}
+.underline {
+  position: absolute;
+  background-color: #fbb517;
+  height: 3px;
+  transition: top 0.3s ease-in-out, left 0.3s ease-in-out,
+    width 0.3s ease-in-out;
+}
+.secondContainer {
+  background-image: url("https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/home_bg.jpg");
+  background-size: cover;
+}
+.free-trial {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 6%;
+  padding-top: 30px;
+}
+
+.secondContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.free-trial .container {
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  background-color: #0006;
+  padding: 14px 40px 14px 40px;
+  align-items: center;
+  gap: 1%;
+  justify-content: center;
+}
+
+.free-trial h2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.free-trial p {
+  color: #fff;
+  text-align: left;
+  font-family: "Barlow", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.free-trial form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.free-trial input,
+.free-trial select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.time-slots {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.time-slots label {
+  color: #fff;
+  display: flex;
+  font-family: "Barlow", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 0.3rem;
+}
+.time-slots input {
+  height: 13px;
+  width: 13px;
+}
+.free-trial button {
+  width: 100%;
+  background-image: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  ) !important;
+  -webkit-animation: animatedgradient 3s ease infinite alternate;
+  animation: animatedgradient 3s ease infinite alternate;
+  background-size: 300% 300%;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  min-height: 40px;
+  border: none;
+  border-radius: 3px;
+}
+
+.free-trial button:hover {
+  background-color: #218838;
+}
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.secondContainer h3 {
+  color: #fff;
+  font-family: "Barlow", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 35px;
+  text-align: center;
+}
+.secondContainer h1 {
+  color: #fbb517;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 68px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container h2 {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.container h4 {
+  color: #fbb517;
+  font-family: "Caveat", Sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+.container form input,
+select {
+  font-family: "Barlow", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #69727d;
+  border-radius: 3px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border: none;
+}
+.free-trial select {
+  z-index: 100;
+  position: relative;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.divider {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.video-container {
+  position: relative;
+  width: 920px;
+  height: 512px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-button {
+  transition: fill 0.3s ease;
+  height: 130px;
+  width: 130px;
+  opacity: 0.8;
+  fill: #ffffff;
+}
+
+.play-button:hover {
+  opacity: 1;
+}
+
+#live-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.videoContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -65px;
+}
+.video-container {
+  border-style: solid;
+  border-width: 5px 5px 5px 5px;
+  border-color: #fff;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.26);
+}
+.thirdContainer h2 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.benefits-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.benefits-section h2 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 35px;
+}
+
+.benefits-section .highlight {
+  color: #f6b01b; /* Yellow-orange color for highlighted text */
+}
+
+.benefit-container {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.benefit-card {
+  width: 270px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 2px solid #dbdbdb;
+  margin: 5px 5px 5px 5px;
+  padding: 18px;
+  height: 198px;
+  border-radius: 25px;
+}
+
+.benefit-card img {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+
+.benefit-card:hover {
+  background-color: #f6b01b;
+}
+
+.trial-info h2 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.trial-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.trial-info ul li {
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.trial-info ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.trial-info ul li svg {
+  fill: #f6b01b;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.fourthContainer,
+.sixthContainer {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.schedule-section {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.schedule-section h1 {
+  color: #fff;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  background-color: #ffcc33;
+  width: 326px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  border-radius: 25px 25px 25px 25px;
+  border: 6px solid #fff;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin-bottom: 5px;
+}
+
+.props {
+  font-style: italic;
+  color: #333;
+}
+.registerButton {
+  background-image: linear-gradient(
+    135deg,
+    rgb(74, 234, 220) 0%,
+    rgb(151, 120, 209) 20%,
+    rgb(207, 42, 186) 40%,
+    rgb(238, 44, 130) 60%,
+    rgb(251, 105, 98) 80%,
+    rgb(254, 248, 76) 100%
+  );
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-animation: animatedgradient 3s ease infinite alternate;
+  animation: animatedgradient 3s ease infinite alternate;
+  background-size: 300% 300%;
+  width: 395px;
+  height: 49px;
+  border-radius: 10px;
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.registerButton:hover {
+  background-color: #5c48b5;
+}
+.registerButtonText {
+  font-family: "Barlow", Sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  fill: #fff;
+  color: #fff;
+  background-color: #17fbf500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.registerButtonText svg {
+  height: 20px;
+  width: 20px;
+}
+.fifthContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 3.5rem;
+}
+.fifthContainer h1 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.coachInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 71%;
+}
+.fifthContainer p {
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+.fifthContainerVideoContentContainer {
+  display: flex;
+  justify-content: center;
+}
+.fifthContainerVideoContainer {
+  border-radius: 25px 25px 25px 25px;
+  border: 2px solid;
+  width: 1076px;
+  height: 605px;
+  box-shadow: none;
+}
+.lifeJourney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.lifeJourney h3 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.sixthContainer h1 {
+  color: #fff;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+}
+
+.sixthContainerfirstVideoContentContainer {
+  margin-top: 0px;
+}
+.sixthContainerVideoContainer {
+  width: 522px;
+  height: 292px;
+}
+.sixthContainersecondVideoContentContainer {
+  margin-top: 0px;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.sixthContainerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.seventhContainer {
+  background-color: #fcf1d9;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* padding: 35px 15px 35px 15px; */
+}
+.seventhContainer h1 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+/* .seventhContainerbackgroundOverlay {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/bg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.71;
+  mix-blend-mode: color-dodge;
+} */
+.allImagesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-bottom: 40px;
+}
+.imageContainer1,
+.imageContainer2,
+.imageContainer3,
+.imageContainer4,
+.imageContainer5,
+.imageContainer6 {
+  border: 5px solid #fff;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 340px;
+  position: relative !important;
+}
+.ImageOverlayContainer {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: inherit;
+  transition: background-color 0.5s ease;
+}
+.ImageOverlayContainer:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  cursor: pointer;
+}
+.imageContainer1 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-1.webp);
+  height: 670px;
+}
+.imageContainer2 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-2.webp);
+  height: 605px;
+}
+.imageContainer3 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-5.webp);
+  height: 670px;
+}
+.imageContainer4 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-6.webp);
+  height: 670px;
+}
+.imageContainer5 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-7.webp);
+  margin-top: -54px;
+  height: 605px;
+}
+.imageContainer6 {
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/Untitled-design-1.webp);
+  height: 670px;
+}
+.seventhContainerRegistrationButtonContainer {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.eighthContainer h1 {
+  color: #000;
+  font-family: "Barlow", Sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 41px !important;
+  justify-content: center;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.faqAllContentContainer {
+  width: 70%;
+}
+
+.faq-item {
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ffffff36;
+  margin-top: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: black;
+  padding: 25px 25px 25px 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  color: white !important;
+  font-family: "Barlow", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.faq-question.active {
+  color: #fbb517 !important; /* Color when active */
+}
+
+.plus-icon,
+.minus-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.minus-icon {
+  display: none; /* Hide minus icon by default */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  background-color: #fcf1d9;
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-answer p {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding: 25px;
+  margin-bottom: 0px;
+}
+.site-footer a {
+  background-color: transparent;
+  color: #c36;
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+.site-footer a:hover {
+  text-decoration: none;
+  color: rgb(4, 4, 114);
+}
+.footer-text {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+
+.copyright {
+  color: #fff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+
+.footer-links {
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #fbb517;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Container to center footer content */
+.footer-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger svg {
+  width: 24px;
+  height: 24px;
+  fill: rgb(88, 87, 87);
+}
+
+.dropdownContainer {
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  width: 41%;
+  padding: 10px;
+  z-index: 100;
+  transform: scaleY(1);
+  max-height: 246px;
+  animation: hide-scroll 0.3s backwards;
+  right: 5%;
+  top: 73%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@keyframes hide-scroll {
+  0%,
+  100% {
+    overflow: hidden;
+  }
+}
+.dropdownContainer ul {
+  list-style-type: none;
+}
+.dropdownContainer ul li a {
+  font-size: 16px;
+  font-family: "Poppins", Sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #494c4f;
+  padding: 10px 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+}
+/* Default styles for list items */
+#dropdown li {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active class for the selected list item */
+#dropdown li.active {
+  background-color: #fbb517;
+  color: white;
+}
+#dropdown li.active a {
+  color: white;
+}
+.sticky-footer {
+  background-size: initial;
+  margin-bottom: 0px;
+  z-index: 9999;
+  box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.3);
+  width: 100% !important;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-position: 50%;
+  background-color: black;
+  display: none;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .alert-header p {
+    font-size: 18px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .underline {
+    display: none;
+  }
+  .main-header {
+    padding: 10px 10px;
+  }
+  .secondContainer h3 {
+    font-size: 18px;
+    line-height: 1.3em;
+    width: 88%;
+    padding-bottom: 20px;
+  }
+  .secondContainer h1 {
+    font-size: 45px;
+    line-height: 2.8rem;
+    width: 84%;
+  }
+  .free-trial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondContainerImageContainer img {
+    width: 100%;
+  }
+  .free-trial .container {
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    background-color: #0006;
+    padding: 14px 20px 14px 20px;
+    align-items: center;
+    gap: 1%;
+    justify-content: center;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registerButton {
+    width: 100%;
+    height: 100%;
+  }
+  .fifthContainerVideoContainer {
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+  .video-container {
+    width: 90%;
+    height: 100%;
+  }
+  .lifeJourney img {
+    transform: rotate(90deg);
+  }
+  .sixthContainerVideoContainer {
+    width: 90%;
+    height: 206px;
+  }
+  .allImagesContainer {
+    flex-direction: column;
+  }
+  .imageContainer1,
+  .imageContainer2,
+  .imageContainer3,
+  .imageContainer4,
+  .imageContainer5,
+  .imageContainer6 {
+    width: 295px;
+    height: 591px;
+    background-size: cover;
+  }
+  .container h2 {
+    font-size: 18px;
+    line-height: 1.3rem;
+  }
+  .container h4 {
+    font-size: 20px;
+    line-height: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container form input,
+  select {
+    font-size: 16px;
+  }
+  .free-trial p {
+    font-size: 18px;
+  }
+  .time-slots label {
+    font-size: 16px;
+  }
+  .free-trial button {
+    font-size: 1em;
+  }
+  .benefits-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits-section h2 {
+    font-size: 25px;
+    line-height: 1.3em;
+    width: 87%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .benefit-card {
+    width: 89%;
+  }
+  .trial-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trial-info ul li {
+    font-size: 16px;
+  }
+  .trial-info ul {
+    width: 77%;
+  }
+  .divider {
+    width: 100%;
+    height: 30px;
+  }
+  .schedule-section h1 {
+    font-size: 25px;
+    line-height: 1.3em;
+  }
+  .schedule-section {
+    padding: 21px;
+    padding-bottom: 38px;
+  }
+  .card {
+    width: 90%;
+  }
+  .registerButtonText {
+    font-size: 17px;
+  }
+  .fifthContainer h1 {
+    font-size: 25px;
+  }
+  .fifthContainer {
+    padding: 50px 0px;
+  }
+  .coachInfo {
+    width: 84%;
+  }
+  .lifeJourney h3 {
+    font-size: 25px;
+  }
+  .sixthContainer h1 {
+    font-size: 25px;
+    line-height: 1.3em;
+  }
+  .seventhContainer h1 {
+    font-size: 25px;
+    line-height: 1.3em;
+    width: 86%;
+  }
+  .seventhContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .allImagesContainer {
+    width: 100%;
+  }
+  .allImagesContainer a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .eighthContainer h1 {
+    font-size: 25px;
+    line-height: 1.3em;
+  }
+  .faq-question {
+    font-size: 16px;
+  }
+  .faqAllContentContainer {
+    width: 80%;
+  }
+  .faq-answer p {
+    font-size: 14px;
+    padding: 15px 25px 15px 25px;
+  }
+  .footer-text {
+    font-size: 12px;
+  }
+  .footer-container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .copyright {
+    color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .site-footer a {
+    font-size: 12px;
+  }
+  .imageContainer5 {
+    margin-top: 0px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .sticky-footer {
+    display: block;
+  }
+  .site-footer {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1024px) {
+  .benefit-card {
+    width: 70%;
+  }
+  .registerButton {
+    width: 66%;
+  }
+  .sixthContainerVideoContainer {
+    width: 100%;
+    height: 206px;
+  }
+  .video-container-width {
+    width: 337px;
+  }
+  .seventhContainerRegistrationButtonContainer {
+    width: 100%;
+  }
+}

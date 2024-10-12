@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Funda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <section class="firstContainer">
+            <div class="alert-header">
+                <p>
+                    <ud>Attention!</ud> Housewives & Working Women Looking To Lose Weight..
+                </p>
+            </div>
+        </section>
+        <header class="main-header">
+            <div class="logo">
+                <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/Fitness-Funda-logo-01-1.webp"
+                    alt="Fun Da with Jyoti Logo">
+            </div>
+            <nav class="navbar">
+                <ul id="navbarList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#liveclass">Live Class</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+                <div class="underline"></div>
+            </nav>
+            <div class="hamburger" id="hamburgerMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" id="hamburgerIcon" viewBox="0 0 448 512">
+                    <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" id="crossIcon" viewBox="0 0 384 512" style="display: none;">
+                    <path d="M378.9 378.9c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L192 292.3 50.4 424c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 247.7 5 106.1c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 202.9l141.6-141.6c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3L237.3 247.7 378.9 378.9z"/>
+                </svg>
+            </div>
+            
+            <div class="dropdownContainer" id="dropdownContainer" style="display: none;">
+                <ul id="dropdown">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#liveclass">Live Class</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="secondContainer" id="home">
+            <h3>Dance Your Way to Ageless Beauty using Ghar Ki Cheeze</h3>
+            <h1>Get Your Dream Body Stress Free at Home</h1>
+            <div class="free-trial">
+                <div class="container">
+                    <h2>Reserve Free Seat for 1 Day Trial</h2>
+                    <h4>Choose Your Best Time To Do FunDa!</h4>
+                    <form>
+                        <input type="text" placeholder="Enter Your Name" required />
+                        <input type="email" placeholder="Enter Your Email" required />
+                        <input type="text" placeholder="Enter Whatsapp No." required />
+                        <select>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
+                        <p>Choose Your Time Slot</p>
+                        <div class="time-slots">
+                            <label><input type="radio" name="time-slot" value="6:00 AM" /> 6:00 AM</label>
+                            <label><input type="radio" name="time-slot" value="8:00 AM" /> 8:00 AM</label>
+                            <label><input type="radio" name="time-slot" value="11:00 AM" /> 11:00 AM</label>
+                            <label><input type="radio" name="time-slot" value="5:00 PM" /> 5:00 PM</label>
+                        </div>
+                        <button type="submit">SIGN UP FOR FREE TRIAL</button>
+                    </form>
+                </div>
+                <div class="secondContainerImageContainer">
+                    <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/funda_jyoti.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="thirdContainer" id="liveclass">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none" fill="#FBB517"
+                class="divider">
+                <path class="elementor-shape-fill"
+                    d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+                </path>
+            </svg>
+            <div class="videoContentContainer">
+                <div class="video-container">
+                    <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Thumb01.jpg"
+                        alt="Live Class" class="thumbnail">
+                    <div class="play-icon" onclick="playVideo()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                            <path
+                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <video id="live-video" controls style="display: none;">
+                        <source src="path-to-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h2>Kya Aap ZERO STRESS Ke Saath Ek <yellow>Confident Rich Body</yellow> Chahte Ho, Bina</h2>
+
+                <div class="benefit-container">
+                    <div class="benefit-card">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/healthy.png"
+                            alt="Gym Icon" />
+                        <p>Spending Money On GYM & Going Out To Exercise</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/equipment.png"
+                            alt="Equipment Icon" />
+                        <p>Spending On Additional Equipment Or Products</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/anxiety-1.png"
+                            alt="Family Icon" />
+                        <p>Diverting From Ghar Ke Kaam And Family</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/leadership.png"
+                            alt="Motivation Icon" />
+                        <p>Self Motivation Ka JhanJhat</p>
+                    </div>
+                </div>
+
+                <div class="trial-info">
+                    <h2>Experience The Magic Of FunDa LIVE On <span class="highlight">Free Trial Class</span></h2>
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                            </svg> You Exercise with Ghar Ke Cheez at No Expense</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                            </svg> Join & Attend via Live at Multiple & Flexible Time Slots, Just For You.</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                            </svg> Only Women Fitness Community</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="fourthContainer" id="schedule">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none" fill="#FBB517"
+                class="divider">
+                <path class="elementor-shape-fill"
+                    d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+                </path>
+            </svg>
+            <section class="schedule-section">
+                <h1>Kya Aapke Ghar Mei Ye Cheeze Hai?</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/FunDa-with-Jyoti_WebPage-design_V2-01.png"
+                                alt="Monday Workout">
+                        </div>
+                        <!-- <div class="card-content">
+                            <h2>MONDAY</h2>
+                            <p>FUNDA + FUNCTIONAL</p>
+                            <p class="props">Prop: Chair, Mat</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/FunDa-with-Jyoti_WebPage-design_V2-02.png"
+                                alt="Tuesday Workout">
+                        </div>
+                        <!-- <div class="card-content">
+                            <h2>TUESDAY</h2>
+                            <p>FUNDA + MEDITATION</p>
+                            <p class="props">Prop: Stick, Wiper</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/FunDa-with-Jyoti_WebPage-design_V2-03.png"
+                                alt="Wednesday Workout">
+                        </div>
+                        <!-- <div class="card-content">
+                            <h2>WEDNESDAY</h2>
+                            <p>FUNDA WITH BALL/CUSHION YOGA</p>
+                            <p class="props">Prop: Ball, Cushion</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/FunDa-with-Jyoti_WebPage-design_V2-04.png"
+                                alt="Monday Workout">
+                        </div>
+                        <!-- <div class="card-content">
+                            <h2>MONDAY</h2>
+                            <p>FUNDA + FUNCTIONAL</p>
+                            <p class="props">Prop: Chair, Mat</p>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/FunDa-with-Jyoti_WebPage-design_V2-05.png"
+                                alt="Tuesday Workout">
+                        </div>
+                        <!-- <div class="card-content">
+                            <h2>TUESDAY</h2>
+                            <p>FUNDA + MEDITATION</p>
+                            <p class="props">Prop: Stick, Wiper</p>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="registerButton"><span class="registerButtonText"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                        </svg> REGISTER FOR FREE TRIAL</span></button>
+            </section>
+        </section>
+
+        <section class="fifthContainer" id="aboutme">
+            <h1>About Your Coach</h1>
+            <div class="coachInfo">
+                <p>Hi, I am Jyoti a Software Engineer by profession but a Fitness Trainer by Passion.</p>
+                <p>I am playing so many roles – A Mother, a House Wife, a Daughter in law, etc in my life but one role
+                    that I love the most is of A Women Fitness Coach. I am my best when I am on the Fitness Fun Da floor
+                    in front of my FunDa Family.</p>
+                <p>It all started when the going was getting really tough and I was surrounded with a hell of a lot of
+                    responsibilities after marriage.</p>
+            </div>
+
+            <div class="fifthContainerVideoContentContainer">
+                <div class="video-container fifthContainerVideoContainer">
+                    <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Thumb03.jpg"
+                        alt="Live Class" class="thumbnail">
+                    <div class="play-icon" onclick="playVideo()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                            <path
+                                d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <video id="live-video" controls style="display: none;">
+                        <source src="path-to-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+
+            <div class="coachInfo">
+                <p>One day exactly on 4th June’2018 I decided, “that’s it, I want my life back”.</p>
+                <p>I trained hard, got into several certifications, and then started training Zumba at my home to some
+                    of the females of my neighborhood. Sooner I realized that Zumba is not made for the Typical Indian
+                    bodies, so I started building my own dance form.</p>
+                <p>It took me a year to come up with the New Indian Recipe of Fun and Dance called “Fun Da” which
+                    improves the Fitness level of an Individual.</p>
+                <p>That’s the Story behind Fitness Fun Da with Jyoti.</p>
+            </div>
+
+            <div class="lifeJourney">
+                <h3>Jyoti Ki Life Journey</h3>
+                <!-- <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Funda_Journey_H.png" alt=""> -->
+            </div>
+        </section>
+
+        <section class="sixthContainer" id="testimonials">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none" fill="#FBB517"
+                class="divider">
+                <path class="elementor-shape-fill"
+                    d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+                </path>
+            </svg>
+            <div class="sixthContainerContent">
+                <h1>Meet the Funda Family & Hear How they Benefited</h1>
+                <div class="videoContentContainer sixthContainerfirstVideoContentContainer">
+                    <div class="video-container sixthContainerVideoContainer">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Thumb2.jpg"
+                            alt="Live Class" class="thumbnail">
+                        <div class="play-icon" onclick="playVideo()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <video id="live-video" controls style="display: none;">
+                            <source src="path-to-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="videoContentContainer sixthContainersecondVideoContentContainer">
+                    <div class="video-container sixthContainerVideoContainer video-container-width">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Testimonial1.jpg"
+                            alt="Live Class" class="thumbnail">
+                        <div class="play-icon" onclick="playVideo()">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                                </path>
+                            </svg> -->
+                        </div>
+                        <video id="live-video" controls style="display: none;">
+                            <source src="path-to-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container sixthContainerVideoContainer video-container-width">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Testimonial2.jpg"
+                            alt="Live Class" class="thumbnail">
+                        <div class="play-icon" onclick="playVideo()">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                                </path>
+                            </svg> -->
+                        </div>
+                        <video id="live-video" controls style="display: none;">
+                            <source src="path-to-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container sixthContainerVideoContainer video-container-width">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Testimonial03.jpg"
+                            alt="Live Class" class="thumbnail">
+                        <div class="play-icon" onclick="playVideo()">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                                </path>
+                            </svg> -->
+                        </div>
+                        <video id="live-video" controls style="display: none;">
+                            <source src="path-to-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container sixthContainerVideoContainer video-container-width">
+                        <img src="https://fitness.fundawithjyoti.com/wp-content/uploads/2023/05/Testimonial4.jpg"
+                            alt="Live Class" class="thumbnail">
+                        <div class="play-icon" onclick="playVideo()">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="play-button">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM10.6219 8.41459L15.5008 11.6672C15.6846 11.7897 15.7343 12.0381 15.6117 12.2219C15.5824 12.2658 15.5447 12.3035 15.5008 12.3328L10.6219 15.5854C10.4381 15.708 10.1897 15.6583 10.0672 15.4745C10.0234 15.4088 10 15.3316 10 15.2526V8.74741C10 8.52649 10.1791 8.34741 10.4 8.34741C10.479 8.34741 10.5562 8.37078 10.6219 8.41459Z">
+                                </path>
+                            </svg> -->
+                        </div>
+                        <video id="live-video" controls style="display: none;">
+                            <source src="path-to-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <button class="registerButton"><span class="registerButtonText"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                        </svg> REGISTER FOR FREE TRIAL</span></button>
+            </div>
+        </section>
+
+        <section class="seventhContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none" fill="#FBB517"
+                class="divider">
+                <path class="elementor-shape-fill"
+                    d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+                </path>
+            </svg>
+            <div class="seventhContainerbackgroundOverlay"></div>
+            <h1>Here are Few Transformation Stories</h1>
+            <div class="allImagesContainer">
+                <a href="">
+                    <div class="imageContainer1">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="imageContainer2">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="imageContainer3">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="allImagesContainer">
+                <a href="">
+                    <div class="imageContainer4">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="imageContainer5">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="imageContainer6">
+                        <div class="ImageOverlayContainer"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="seventhContainerRegistrationButtonContainer">
+                <button class="registerButton"><span class="registerButtonText"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                        </svg> REGISTER FOR FREE TRIAL</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="eighthContainer" id="faq">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 20" preserveAspectRatio="none" fill="#FBB517"
+                class="divider">
+                <path class="elementor-shape-fill"
+                    d="M0,0v3c0,0,393.8,0,483.4,0c9.2,0,16.6,7.4,16.6,16.6c0-9.1,7.4-16.6,16.6-16.6C606.2,3,1000,3,1000,3V0H0z">
+                </path>
+            </svg>
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="faqAllContentContainer">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleAnswer(this)">
+                            Are The Timings Flexible?
+                            <span class="plus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20" fill="#FFCB36">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                                </svg></span>
+                            <span class="minus-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20"
+                                    fill="#FBB517"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes we understand how challenging it is being a Women, so the best part is you can change
+                                your batch according to your convenience. We even provide recorded session too.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleAnswer(this)">
+                            How Much Weight I Will Be Able To Loose?
+                            <span class="plus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20" fill="#FFCB36">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                                </svg></span>
+                            <span class="minus-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20"
+                                    fill="#FBB517"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our program is designed in such a way that we focus more on the process not results since
+                                Every one’s body is different. Typically our FunDa Family Members loose at an average
+                                2-3 kgs in a Month. Please note that we don’t believe in Result Guarantee, we firmly
+                                believe in making Fitness part of your daily life.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleAnswer(this)">
+                            Will I Be Able To Do These Workouts?
+                            <span class="plus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20" fill="#FFCB36">
+                                    <path
+                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
+                                </svg></span>
+                            <span class="minus-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                    height="20" width="20"
+                                    fill="#FBB517"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                </svg></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes ofcourse, our Program has been designed in such a way that it’s easy and affordable
+                                for you. You can do the workout according to your comfort. We will also connect with you
+                                to track your progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <p class="footer-text">
+                    This Site Is Not A Part Of The Facebook Website / Google Ads / Facebook Inc / Google Inc.
+                    Additionally, This Site Is NOT Endorsed By Facebook / Google In Any Way. FACEBOOK Is A Trademark Of
+                    FACEBOOK, Inc. Google Ads Is A Trademark Of Google Inc.
+                </p>
+                <p class="copyright">
+                    Copyright © 2023 Funda With Jyoti All Rights Reserved
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a> |
+                    <a href="#" class="footer-link">Refund Policy</a>
+                </div>
+            </div>
+        </footer>
+        <div class="sticky-footer">
+            <div class="d-flex flex-row justify-content-around align-items-center footerPadding">
+                <button class="registerButton"><span class="registerButtonText"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z" />
+                </svg> REGISTER FOR FREE TRIAL</span></button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
