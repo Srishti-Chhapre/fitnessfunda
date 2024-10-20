@@ -717,29 +717,49 @@ select:focus {
   background-color: rgba(0, 0, 0, 0.5) !important;
   cursor: pointer;
 }
-.imageContainer1 {
+.myImage{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative !important;
+}
+.myImage1{
   background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-1.webp);
+}
+.myImage2{
+  background-image: url(	https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-2.webp);
+}
+.myImage3{
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-5.webp);
+}
+.myImage4{
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-6.webp);
+}
+.myImage5{
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-7.webp);
+}
+.myImage6{
+  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/Untitled-design-1.webp);
+}
+.imageContainer1 {
   height: 670px;
 }
 .imageContainer2 {
-  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-2.webp);
   height: 605px;
 }
 .imageContainer3 {
-  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-5.webp);
   height: 670px;
 }
 .imageContainer4 {
-  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-6.webp);
   height: 670px;
 }
 .imageContainer5 {
-  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/TestiFunda-7.webp);
   margin-top: -54px;
   height: 605px;
 }
 .imageContainer6 {
-  background-image: url(https://fitness.fundawithjyoti.com/wp-content/uploads/2023/04/Untitled-design-1.webp);
   height: 670px;
 }
 .seventhContainerRegistrationButtonContainer {
@@ -920,13 +940,16 @@ select:focus {
   width: 41%;
   padding: 10px;
   z-index: 100;
-  transform: scaleY(1);
+  /* transform: scaleY(1); */
+  transform: scaleY(0);
   max-height: 246px;
   animation: hide-scroll 0.3s backwards;
   right: 5%;
   top: 73%;
   padding-left: 0px;
   padding-right: 0px;
+  overflow: hidden; 
+  display: none;
 }
 @keyframes hide-scroll {
   0%,

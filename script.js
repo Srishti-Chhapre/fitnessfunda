@@ -124,21 +124,21 @@ document.querySelectorAll(".registerButtonText").forEach(span => {
 });
 
 // Hamburger menu toggle functionality
-document.getElementById("hamburgerMenu").addEventListener("click", function() {
-  const hamburgerIcon = document.getElementById("hamburgerIcon");
-  const crossIcon = document.getElementById("crossIcon");
-  const dropdownContainer = document.getElementById("dropdownContainer");
+// document.getElementById("hamburgerMenu").addEventListener("click", function() {
+//   const hamburgerIcon = document.getElementById("hamburgerIcon");
+//   const crossIcon = document.getElementById("crossIcon");
+//   const dropdownContainer = document.getElementById("dropdownContainer");
 
-  if (hamburgerIcon.style.display !== 'none') {
-    hamburgerIcon.style.display = 'none';
-    crossIcon.style.display = 'block';
-    dropdownContainer.style.display = 'block';
-  } else {
-    hamburgerIcon.style.display = 'block';
-    crossIcon.style.display = 'none';
-    dropdownContainer.style.display = 'none';
-  }
-});
+//   if (hamburgerIcon.style.display !== 'none') {
+//     hamburgerIcon.style.display = 'none';
+//     crossIcon.style.display = 'block';
+//     dropdownContainer.style.display = 'block';
+//   } else {
+//     hamburgerIcon.style.display = 'block';
+//     crossIcon.style.display = 'none';
+//     dropdownContainer.style.display = 'none';
+//   }
+// });
 
 // Dropdown <li> click functionality
 document.querySelectorAll("#dropdown li").forEach(item => {
@@ -147,6 +147,66 @@ document.querySelectorAll("#dropdown li").forEach(item => {
     this.classList.add("active");
   });
 });
+
+// window.addEventListener('load', () => {
+//   gsap.fromTo(".myImage", 
+//     { scale: 0, transformOrigin: "top left"}, // Start scale
+//     { scale: 1, duration: 0.7, ease: "power2.out" } // End scale with animation
+//   );
+// });
+window.addEventListener('load', () => {
+  gsap.fromTo(".myImage", 
+    { scale: 0, right: "-50%" }, // Start with scale 0 and positioned off-screen to the right
+    { 
+      scale: 1, // Scale to full size
+      right: "0%", // Move to full position
+      duration: 2, // Animation duration
+      ease: "power2.out" // Easing effect
+    }
+  );
+});
+
+
+const containerDiv = document.getElementById('dropdownContainer');
+const toggleButton = document.getElementById('hamburgerMenu');
+const crossIcon = document.getElementById('crossIcon');
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+let isOpen = false;
+
+toggleButton.addEventListener('click', () => {
+    if (!isOpen) {
+        containerDiv.style.display = "block"; // Show the dropdown before animating
+        gsap.to(containerDiv, { 
+            transform: "translateY(0) scaleY(1)", // Open from the top
+            duration: 0.3, 
+            ease: "power2.out" 
+        });
+        hamburgerIcon.style.display = "none"; // Hide hamburger icon
+        crossIcon.style.display = "block"; // Show close icon
+    } else {
+        closeDropdown();
+    }
+    isOpen = !isOpen;
+});
+
+// Close dropdown function
+crossIcon.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click from bubbling up to the toggleButton
+    closeDropdown();
+});
+
+function closeDropdown() {
+    gsap.to(containerDiv, { 
+        transform: "translateY(-100%) scaleY(0)", // Close to the top
+        duration: 0.3, 
+        ease: "power2.in", 
+        onComplete: () => {
+            containerDiv.style.display = "none"; // Hide the dropdown after animation
+            hamburgerIcon.style.display = "block"; // Show hamburger icon
+            crossIcon.style.display = "none"; // Hide close icon
+        }
+    });
+}
 
 
 
